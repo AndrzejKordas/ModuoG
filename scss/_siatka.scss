@@ -1,0 +1,194 @@
+.s1 {
+    width: 10%;
+    float: left;
+
+}
+
+.s2 {
+    width: 20%;
+    float: left;
+
+}
+
+.s3 {
+    width: 30%;
+    float: left;
+}
+
+.s4 {
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+}
+
+.s5 {
+    width: 50%;
+    float: left;
+}
+
+/********************/
+
+.ss5 {
+    width: 50%;
+    float: right;
+}
+
+/**********************/
+
+.s6 {
+    width: 60%;
+    float: left;
+}
+
+.s7 {
+    width: 70%;
+    float: left;
+}
+
+.dok {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+
+.marginleft {
+    margin-left: 5%;
+}
+
+.alignTextVer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    h1 {
+        text-transform: uppercase;
+        font-weight: 550;
+        color: $colorT;
+        line-height: 78px;
+        font-size: 36px;
+        &:before {
+            content: " ";
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: $olivLinkHover;
+            margin-bottom: 67px;
+        }
+        @media (max-width: 1200px) {
+            font-size: 2rem;
+            line-height: 60px;
+        }
+    }
+    @media (max-width: 1200px) {
+        padding: 0 2.5rem;
+        line-height: 40px;
+    }
+}
+
+.pokuj {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .s1,
+    .s2,
+    .s3,
+    .s4,
+    .s5,
+    .s6,
+    .s7 {
+        width: 100%;
+        float: none;
+        display: table;
+        /*background: red;*/
+    }
+    .dok {
+        margin-left: 0%;
+        justify-content: center;
+    }
+    .marginleft {
+        margin-left: 0%;
+    }
+}
+
+/*****************************/
+
+.wiersz {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 95%;
+    margin: auto;
+
+    .prawy {
+        background: #ddd;
+        flex: 63%;
+        max-width: 63%;
+    }
+
+    .lewy {
+        /*background: #9f9;*/
+        flex: 34%;
+        max-width: 34%;
+    }
+
+    @media (max-width: 1200px) {
+        flex-direction: column-reverse;
+
+        .prawy {
+            flex: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+        .lewy {
+            flex: 100%;
+            max-width: 100%;
+        }
+        .lewyGreen{
+            background: $colorT;
+            h4{
+                color:#fff;
+            }
+            button{
+                 margin:2rem 0;
+            }
+        }
+    }
+}
+
+/*********************************/
+
+.wiersz2 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: auto;
+    .lewy2 {
+        /*background: #9f9;*/
+        flex: 40%;
+        max-width: 40%;
+        margin-right: 5%;
+    }
+    .prawy2 {
+        /*background: #ddd;*/
+        flex: 55%;
+        max-width: 55%;
+
+    }
+
+    @media (max-width: 1200px) {
+        width: 95%;
+        flex-direction: column-reverse;
+        .lewy2 {
+            flex: 100%;
+            max-width: 100%;
+            margin-right: 0%;
+        }
+        .prawy2 {
+            flex: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+    }
+}

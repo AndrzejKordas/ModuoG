@@ -1,0 +1,31 @@
+* {
+  transition: all 0.5 ease-in;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: hidden; }
+
+.top {
+  background: #fff !important;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 0px 8px #ddd;
+  z-index: 100; }
+
+.navbar-nav a {
+  color: #7d8e88 !important;
+  text-decoration: none;
+  padding: 2rem; }
+
+.navbar-nav a:hover {
+  color: #D3B47A !important; }
+
+.pod {
+  margin-top: 155px; }
+
+.red {
+  background: red; }
+
+/*# sourceMappingURL=main.css.map */

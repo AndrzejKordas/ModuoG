@@ -1,0 +1,5 @@
+@mixin tlo($obrazek){
+    background: $obrazek !important;
+    background-position: center center;
+    @content;
+}

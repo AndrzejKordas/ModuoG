@@ -1,0 +1,210 @@
+* {
+    transition: all 0.5 ease-in;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font;
+    overflow-x: hidden;
+    color: $colorT;
+}
+
+.top {
+    background: #fff !important;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0px 0px 8px #ddd;
+    z-index: 100;
+    .navbar-nav a {
+        color: $colorMenu !important;
+        text-decoration: none;
+        padding: 2rem;
+        &:hover {
+            color: $colorHover !important;
+        }
+        @media (max-width:1200px) {
+            display: block;
+            padding: 1rem;
+            margin: auto auto auto 2rem;
+
+        }
+        @media (max-width:1366px) {
+            padding: 0.7rem;
+        }
+    }
+}
+
+.ornament {
+    @include tlo($lisc1);
+    background-repeat: no-repeat;
+}
+
+.orn {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: -1;
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.pod {
+    margin-top: 155px;
+}
+
+.greenBox {
+    position: absolute;
+    background: rgba(13, 45, 34, .9);
+    width: 400px;
+    height: 400px;
+    padding: 2rem;
+    box-sizing: border-box;
+    top: 170px;
+    left: 950px;
+    h1 {
+        font-weight: 550;
+        color: #bd965f;
+        line-height: 72px;
+        letter-spacing: 0.25rem
+    }
+    em {
+        color: #7d8e88;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    @media (max-width: 1366px) {
+        left: 65%;
+    }
+    @media (max-width: 1200px) {
+        position: relative;
+        background: rgba(13, 45, 34, .9);
+        width: 100%;
+        height: 400px;
+        padding: 2rem;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+    }
+}
+
+
+.spaceRow {
+    margin-top: 4rem;
+}
+
+.borderBrown {
+    border-top: 2px solid $colorHover;
+    padding: 2rem 0;
+    /*
+    display:flex; 
+    flex-wrap: nowrap; 
+    align-items: center
+    */
+    p {
+        margin: 2rem auto 2rem auto;
+        line-height: 1.8rem;
+        color: $colorT;
+    }
+    h2 {
+        font-weight: 600;
+        color: #bd965f;
+        line-height: 72px;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    h4 {
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 3rem;
+    }
+    a {
+        color: $colorHover;
+        font-style: italic;
+        margin: 4rem auto;
+    }
+    @media (max-width: 1200px) {
+        padding: 0 2rem;
+    }
+}
+
+.deepGreen {
+    background: $colorT;
+    a {
+        color: $olivLink;
+        margin: 0.5rem;
+        &:hover {
+            color: $olivLinkHover;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+}
+
+.h2h4 {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    p {
+        margin: 4rem auto;
+        line-height: 1.8rem;
+        color: $colorT;
+    }
+    h2 {
+        font-weight: 600;
+        color: #bd965f;
+        line-height: 72px;
+        letter-spacing: 0.25rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    h4 {
+        margin-top: 0;
+    }
+    div {
+        padding: 1rem;
+
+    }
+}
+
+p.kolorGold {
+    color: $olivLinkHover;
+    font-weight: 500;
+    &.normalTekst {
+        font-weight: 400;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+}
+
+/*************** stopka ***********************/
+
+.tekstStopka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    h3 {
+        text-transform: uppercase;
+        font-weight: 550;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    @media (max-width: 1200px) {
+        padding: 2rem;
+
+    }
+}
+
+.Gold {
+    color: $olivLinkHover;
+    margin-bottom: 2rem;
+}
+
+.red{
+    background: red;
+}
